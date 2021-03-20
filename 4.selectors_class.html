@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <!--Memanggil file JQuery -->
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){//mempersiapkan halaman html oleh JQuery
+        //membuat bebrapa id dan class 
+        $("#daftar").addClass("merahkuning"); 
+        $(".subdaftar").addClass("kuninghitam");});
+        </script>
+        <!--mengatur internal css-->
+        <style type="text/css">
+        .merahkuning{
+        color: red;
+        font-weight: bold;
+        background-color: yellow;
+        padding: 3px;
+        }
+        .kuninghitam{
+        color: blue;
+        background-color: green;
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <!--membuat text-->
+            <p>paragraf pertama</p>
+        </div>
+        <div>
+            <!--membuat text tampa penomoran-->
+            <ul id="daftar"><!--mendefinisikan elimen menjadi Id "daftar"-->
+                <li>item 1</li>
+                <!--mendefinisikan item 2 sebagai class subdaftar-->
+                <li class="subdaftar">item 2</li>
+                <li>item 3</li>
+            </ul>
+        </div>
+    </body>
+</html>

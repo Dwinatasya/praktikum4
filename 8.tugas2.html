@@ -1,0 +1,50 @@
+<html>
+   <head>
+       <!--Memanggil file JQuery -->
+      <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function(){ //mempersiapkan halaman html oleh JQuery
+         $(".box").dblclick(function(){ /*mengaktifkan fungsi 
+            double click pada class box*/
+            $(this).addClass("box2");/*memanipulasi class box 
+            menjadi class box2*/
+         });
+      });
+      </script>
+       <!--mengatur internal css-->
+      <style type="text/css">
+         .box{
+            width:100px;
+            height:100px;
+            background: brown;
+      }
+        .box2 {
+         width:100px;
+            height:100px;
+            background: yellow;
+      }   
+      </style>
+   </head>
+   <body>
+      <!--membuat text heade-->
+      <h3>Klik 2x pada setiap kotak untuk mengubah warna</h3>
+      <table><!--membuat tabel-->
+         <tr>
+            <th><!--memanggil / mendefinisikan sebagai kelas box-->
+               <p class="box"></p>
+            </th>
+            <th>
+               <p class="box"></p>
+            </th>
+            <th>
+               <p class="box"></p>
+            </th>
+            <th>
+               <p class="box"></p>
+            </th>      
+         </tr>
+      </table>
+      
+     
+   </body>
+</html>

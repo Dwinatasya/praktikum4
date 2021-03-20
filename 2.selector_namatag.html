@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <!--Memanggil file JQuery -->
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){ //mempersiapkan halaman html oleh JQuery
+        $("div").addClass("biru");});//membuat id "div" dan class biru
+        </script>
+        <!--mengatur internal css-->
+        <style type="text/css">
+        .biru{
+        color: blue; 
+        font-weight: bold;
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <!--membuat text-->
+            <p>paragraf pertama</p>
+        </div>
+        <div>
+            <ul><!--membuat text tampa penomoran-->
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <!--Memanggil file JQuery -->
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){ //mempersiapkan halaman html oleh JQuery
+      /*mengaktifkan fungsi fadeout
+      pada class box sdengan cepat*/
+      $(".fade_out").click(function(){
+        $(".box").fadeOut("fast");
+      })
+      /*mengaktifkan fungsi fadein
+      pada class box sdengan lambat*/
+      $(".fade_in").click(function(){
+        $(".box").fadeIn("slow")
+      })
+      /*mengaktifkan fungsi fadeto
+      pada class box sdengan durasi 1 detik
+      dan opacity 0,3 */
+      $(".fade_to").click(function(){
+        $(".box").fadeTo(1000,0.3)
+      })
+    });
+    </script>
+    <!--mengatur internal css-->
+    <style>
+      .box{
+        width: 300px;
+        height: 80px;
+        background-color: blue;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!--membuat text header-->
+    <h3>Click salah satu</h3>
+    <!--menampilkan button dengan class tertentu-->
+    <button class="fade_out"> fade out</button>
+    <button class="fade_in"> fade in</button>
+    <button class="fade_to"> fade to</button>
+    <br><br>
+    <!--memanggil / mendefinisikan sebagai kelas box-->
+    <div class="box"></div>
+  </body>
+</html>

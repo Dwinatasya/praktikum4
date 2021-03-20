@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Menggunakan JQuery</title>
+        <!--Memanggil file JQuery -->
+        <script  src="jquery-3.6.0.min.js"></script> 
+        <script type="text/javascript"> // mengunakan JavaScript
+        
+        $(document).ready(function(){/*function khusus jQuery 
+        untuk menganalisa apakah DOM pada halaman HTML siap digunakan*/
+        /*class sembunyi akan mengaktifkan hide() dan 
+        class tampil akan mengaktifkan show()*/
+        $(".sembunyi").click(function() {$("#foto").hide("slow")});
+        $(".tampil").click(function() {$("#foto").show("slow")});
+        });
+        </script>
+    </head>
+    <body>
+        <!--membuat button dengan kelas sembunyi dan tampil-->
+       <button class="sembunyi">sembunyikan</button>
+       <button class="tampil">tampilkan</button>
+       <!--menampiljan gambar dengan id "foto"-->
+       <p><img id="foto" src="bahan1.jpg" ></p> 
+    </body>
+</html>
